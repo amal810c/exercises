@@ -36,10 +36,10 @@ const result = lowercasename.substring(0, 4) + oneuppercase;
 console.log(result); */
 
 //PEtER
-const randomname = "peter";
+/* const randomname = "peter";
 //Turn randomname into lowercase
 const uppercasename = randomname.toUpperCase();
 const onelowercase = uppercasename.substring(2, 3).toLowerCase();
 const result =
   uppercasename.substring(0, 2) + onelowercase + uppercasename.substring(3, 5);
-console.log(result);
+console.log(result); */
