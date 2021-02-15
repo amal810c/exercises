@@ -1,6 +1,6 @@
 "use strict";
 
-//PART 1
+///////////////////////////////////PART 1////////////////////////////////////////
 //#c0ffee
 /* hexToRGB("#c0ffee");
 
@@ -58,7 +58,7 @@ function hexToRGB(string) {
 }
  */
 
-//PART 2
+///////////////////////////////PART 2//////////////////////////////////
 
 /* // 186 218 85
 let colorObject = {
@@ -236,7 +236,7 @@ function rgbToHex(colorObject) {
 } */
 
 // 9	0	37
-let colorObject = {
+/* let colorObject = {
   r: 9,
   g: 0,
   b: 37,
@@ -258,4 +258,22 @@ function rgbToHex(colorObject) {
     b = "0" + b;
   }
   console.log(`#${r}${g}${b}`); // = #090025
+} */
+
+/////////////////////////////////////////PART 3/////////////////////////////////////////
+
+cssToRGB("rgb(556, 560, 3)");
+
+function cssToRGB(cssRGB) {
+  if (cssRGB.substring(0, 3) == "rgb") {
+    let splitCssRgb = cssRGB.split(",");
+    let r = parseInt(splitCssRgb[0].substring(4));
+    let g = parseInt(splitCssRgb[1].trim());
+    let b = parseInt(
+      splitCssRgb[2].trim().substring(0, splitCssRgb[2].indexOf(")"))
+    );
+    console.log(`${r} ${g} ${b}`);
+  } else {
+    console.log("Not a CSS color-definition string!");
+  }
 }
