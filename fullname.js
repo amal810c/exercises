@@ -1,8 +1,8 @@
 "use strict";
 
-//fullName("Potter", "Harry", "James");
-//fullName("Potter", "Harry");
-//fullName("Harry", "Potter");
+fullName("Potter", "Harry", "James");
+fullName("Potter", "Harry");
+fullName("Harry", "Potter");
 fullName("Potter", "Harry", "James", "Pottypotpot");
 
 function fullName(lastName, firstName, middleName) {
