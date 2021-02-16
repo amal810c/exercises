@@ -279,7 +279,7 @@ function cssToRGB(cssRGB) {
 } */
 
 /////////////////////////////////////////PART 4/////////////////////////////////////////
-let colorObject = {
+/* let colorObject = {
   r: 186,
   g: 218,
   b: 85,
@@ -303,4 +303,18 @@ function rgbToHex(colorObject) {
   }
 
   return `#${r}${g}${b}`;
+} */
+
+/////////////////////////////////////////PART 5/////////////////////////////////////////
+//#c0ffee
+const rgbObject = hexToRGB("#c0ffee");
+//console.log(rgbObject);
+
+function hexToRGB(string) {
+  //split hex into tree parts and convert to numbers
+  const r = parseInt(string.substring(1, 3), 16);
+  const g = parseInt(string.substring(3, 5), 16);
+  const b = parseInt(string.substring(5, 7), 16);
+  const rgb = { r, g, b };
+  return rgb;
 }
