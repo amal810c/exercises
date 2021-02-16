@@ -262,7 +262,7 @@ function rgbToHex(colorObject) {
 
 /////////////////////////////////////////PART 3/////////////////////////////////////////
 
-cssToRGB("rgb(556, 560, 3)");
+/* cssToRGB("rgb(556, 560, 3)");
 
 function cssToRGB(cssRGB) {
   if (cssRGB.substring(0, 3) == "rgb") {
@@ -276,4 +276,31 @@ function cssToRGB(cssRGB) {
   } else {
     console.log("Not a CSS color-definition string!");
   }
+} */
+
+/////////////////////////////////////////PART 4/////////////////////////////////////////
+let colorObject = {
+  r: 186,
+  g: 218,
+  b: 85,
+};
+
+const hexCodeStr = rgbToHex(colorObject);
+console.log(hexCodeStr);
+
+function rgbToHex(colorObject) {
+  let r = colorObject.r.toString(16);
+  let g = colorObject.g.toString(16);
+  let b = colorObject.b.toString(16);
+  if (r.length < 2) {
+    r = "0" + r;
+  }
+  if (g.length < 2) {
+    g = "0" + g;
+  }
+  if (b.length < 2) {
+    b = "0" + b;
+  }
+
+  return `#${r}${g}${b}`;
 }
