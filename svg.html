@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="svg.css" />
+  </head>
+  <body>
+    <svg
+      width="200"
+      height="250"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <rect
+          id="firkant"
+          class="rotation"
+          x="10"
+          y="10"
+          width="30"
+          height="30"
+          stroke="black"
+          stroke-width="5"
+        />
+
+        <circle id="circle" class="pulse" cx="25" cy="75" r="20" />
+        <ellipse class="ellipse" cx="75" cy="75" rx="20" ry="5" />
+      </g>
+
+      <line
+        x1="10"
+        x2="50"
+        y1="110"
+        y2="150"
+        stroke="orange"
+        stroke-width="5"
+      />
+
+      <polyline
+        points="10,10 40,40 25 75 75 75 10 110 50 150 "
+        stroke="blue"
+        stroke-width="4"
+        fill="transparent"
+      />
+
+      <path
+        d=" M 10,10 L 40,40 L 25,75 H 75 L 10,110 L 50,150 "
+        stroke="green"
+        stroke-width="3"
+        fill="transparent"
+      />
+
+      <path
+        d=" M 10,10 Q 40,40 25,75 T 75,75 Q 10,110 50,150"
+        stroke="yellow"
+        stroke-width="1"
+        fill="transparent"
+      />
+    </svg>
+  </body>
+</html>

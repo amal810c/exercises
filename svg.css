@@ -1,0 +1,50 @@
+#firkant {
+  stroke: black;
+  stroke-width: 5;
+  fill: chartreuse;
+}
+#circle {
+  stroke: red;
+  stroke-width: 5;
+  fill: coral;
+}
+
+.ellipse {
+  stroke: crimson;
+  stroke-width: 5;
+  fill: darkmagenta;
+}
+
+.rotation {
+  animation-name: rotation_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotation_kf {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pulse {
+  animation-name: pulse_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse_kf {
+  0% {
+    fill: coral;
+  }
+  100% {
+    fill: crimson;
+  }
+}
